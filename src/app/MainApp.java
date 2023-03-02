@@ -5,7 +5,7 @@ import java.io.IOException;
 public class MainApp {
 
     public static void main(String[] args) throws IOException {
-        System.out.println("Start Application");
+        System.out.println("[Begin] Application");
 
 
         FoobarFile file = new FoobarFile("content.txt");
@@ -19,5 +19,7 @@ public class MainApp {
 //        file.undo();
 
         System.out.println(file.getContent());
+
+        System.out.println("[End] Application");
     }
 }
