@@ -40,14 +40,12 @@ public class FoobarFile {
     }
 
     public void save() {
-
-        //Save to somewhere
-
-//        try (var fileWriter = new FileWriter(this.fileObj.toString());
-//             var bufferedWriter = new BufferedWriter(fileWriter)) {
-//            bufferedWriter.write(this.content);
-//        } catch (IOException e) {
-//            System.err.println("Error writing to file: " + e.getMessage());
-//        }
+        //TODO Save the file to disk
+        try (var fileWriter = new FileWriter(this.fileObj.toString());
+             var bufferedWriter = new BufferedWriter(fileWriter)) {
+            bufferedWriter.write(this.content);
+        } catch (IOException e) {
+            System.err.println("Error writing to file: " + e.getMessage());
+        }
     }
 }
